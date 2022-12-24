@@ -1,0 +1,7 @@
+Selector :
+a) Simple Selector 
+	a) Element Selector
+	b) Class Selector
+	c) ID selector
+	d) group Selector
+	e) universal Selector
