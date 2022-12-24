@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: antiquewhite;">
+   <form action="./hey.html" method="get">
+    <select >
+        <option value="">Select District...</option>
+        <option value="">Chandrapur</option>
+        <option value="">Nagpur</option>
+        <option value="">Yavatmal</option>
+        <option value="">Gadchiroli</option>
+        <option value="">Akola</option>
+    </select>
+    <input list="text" placeholder="Choose district...." >
+    <datalist id="text">
+        <option value="Chandrapur"></option>
+        <option value="Nagpur"></option>
+        <option value="Yavatmal"></option>
+        <option value="Gadchiroli"></option>
+        <option value="Akola"></option>
+    </datalist>
+
+    
+    <button type="button"><label for="upload">upload</label></button>
+    <input type="file" id="upload" hidden>
+
+    <button type="button"> <label for="upload1">upload</label></button>
+    <input type="file" id="upload1" hidden>
+    
+    <input type="reset">
+    <input type="password" minlength="3" maxlength="10" required placeholder="Enter a Password">
+    <input type="text" placeholder="Enter Name" value="Rahul">
+    <input type="submit" value="submit">
+   </form>
+</body>
+</html>
