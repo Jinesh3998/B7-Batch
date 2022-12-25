@@ -1,0 +1,15 @@
+Selector :
+a) Simple Selector 
+	a) Element Selector
+	b) Class Selector.
+	c) ID selector #
+	d) group Selector ,
+	e) universal Selector *
+b) Combinator Selector
+	a) Decendent Selector
+C) Pseudo Class Selector :
+	1) :hover 
+	2) :active
+	3) :visited
+	4) : link
+	5) :first-child

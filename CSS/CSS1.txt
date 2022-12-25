@@ -5,3 +5,14 @@ a) Simple Selector
 	c) ID selector
 	d) group Selector
 	e) universal Selector
+c) pseudo class seletor(:): It is used to provide Special State to an Element
+d) psedo Element Selector(::) : It is used to Select the element and add the content in it
+	1) ::After
+	2) :: before
+	3) ::First-line
+	4) ::First-letter
+	5) ::marker
+e) Attributes selector : It is used to select element on the basis of Attributes name and their value
+1) Element[Attr_name]
+2) Element[Attr_name=value]
+
