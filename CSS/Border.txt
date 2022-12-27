@@ -1,0 +1,8 @@
+Border :
+ syntax :
+  Border : thickness  style color 
+
+
+  thickness - 2px, 3px   .......
+  Style : dotted, solid, double
+  color : red, green, blue, voilet
