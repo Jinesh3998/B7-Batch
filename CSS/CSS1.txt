@@ -16,3 +16,22 @@ e) Attributes selector : It is used to select element on the basis of Attributes
 1) Element[Attr_name]
 2) Element[Attr_name=value]
 
+transform : 
+1) 2D transform
+2) 3D transform
+
+1) 2D tranform 
+	a) translate X & Y
+	b) skew  X & Y
+	c) scale X & Y
+	d) rotate x& Y
+
+3) 3D transform
+	a) rotate z
+
+	Gradient : It is mixture of two or more than two color
+	 Types of Gradient : 
+	 1) Linear Gradient : Linear pattern
+	 2) Radial Gradient
+	 3) conic Gradient
+
