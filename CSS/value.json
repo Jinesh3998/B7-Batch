@@ -1,0 +1,20 @@
+{
+    "fname":"jineshwar",
+   "lname": "Dighore",
+   "username" : "jinu03",
+   "email" : "jineshwar12@gmail.com",
+   "address" : [ {
+           "street" : "Gandhi Chowk",
+            "city" : "Ghugus",
+            "zipcode" : "442505"
+            
+           },
+           {
+            "street" : "Hadpsar",
+             "city" : "pune",
+             "zipcode" : "442555"
+            }
+           
+   
+           ]
+   }

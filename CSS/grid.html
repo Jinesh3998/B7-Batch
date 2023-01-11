@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            margin: 0;
+            padding: 0;
+            display: grid;
+           height: 100vh;
+           width: 100vw;
+           background-color: aqua ;
+           border: 2px solid black;
+           grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+           grid-template-rows: 0.5fr 0.1fr 2fr 0.5fr;
+        }
+        .items{
+            background-color: bisque;
+            border: 2px solid black;
+        }
+        .head{
+            grid-column-start: 1;
+            grid-column-end: 6;
+        }
+        .nav{
+            grid-column-start: 1;
+            grid-column-end: 6;
+        }
+        .foot{
+            grid-template-rows: 4;
+            grid-row-end: 5;
+            grid-column-start: 1;
+            grid-column-end: 6;
+        }
+        .cont{
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+        .aside1{
+            grid-column-start: -2;
+            grid-column-end: -1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items head">Header</div>
+        <div class="items nav">Nav</div>
+        <div class="items cont"> containt</div>
+        <div class="items aside1"> aside</div>
+        <div class="items foot"> footer</div>
+    </div>
+</body>
+</html>
