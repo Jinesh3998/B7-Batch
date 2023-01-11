@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width:100vw;
+            height: 100vh;
+            background-color: aqua;
+            display: grid;
+            grid-template-columns:repeat(5,1fr) ;
+            grid-template-rows: 0.5fr 0.2fr 2fr 0.5fr;
+            grid-template-areas: 'head head head head aside' 'nav nav nav nav nav' 'main main main main main' 'foot foot foot foot foot';
+        }
+        .item{
+            background-color: antiquewhite;
+            border: 2px solid black;
+        }
+        .Head{
+            grid-area: head;
+        }
+        .nav{
+            grid-area: nav;
+        }
+        .aside{
+            grid-area: aside;
+        }
+        .main{
+            grid-area: main;
+        }
+        .foot{
+            grid-area: foot;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item Head">Header</div>
+        <div class="item nav">nav</div>
+        <div class="item aside"> aside</div>
+        <div class="item main">main</div>
+        <div class="item foot">footer</div>
+    </div>
+</body>
+</html>
