@@ -15,8 +15,8 @@
            border: 2px solid black;
            display: grid;
            grid-template-columns: repeat(5,20vw);
-           grid-template-rows: 10vh 5vh 75vh 10vh;
-           grid-template-areas: 'head head head head head' 'nav nav nav nav nav' 'aside con con con con' 'foot foot foot foot aside2';
+           grid-template-rows: 10vh 5vh 10vh 55vh 10vh 10vh;
+           grid-template-areas: 'head head head head head' 'nav nav nav nav nav'  'aside con con con aside2' 'aside con con con aside2' 'aside con con con aside2' 'foot foot foot foot foot';
         }
       
         .items{
@@ -28,34 +28,9 @@
         }
         .nav{
             grid-area: nav ;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            justify-content: center;
-            align-items: center;
-            column-gap: 2px;
-            background-color: black;
-        }
-        .nav a{
-            text-decoration: none;
-            color: white;
-            background-color: black;
-            font-size: 25px;
-        }
-        .nav a:hover{
-            text-decoration: none;
-            color: black;
-            background-color: white;
-            padding: 5px 150px;
-        }
-        .link{
-            
-            align-self: center;
-            justify-self: center;
-           
         }
         .cont{
             grid-area: con;
-            overflow: auto;
         }
         .aside1{
             grid-area: aside;
@@ -66,52 +41,18 @@
         .aside2{
             grid-area: aside2;
         }
+        @media (max-width:640px) {
+            .container{
+                grid-template-areas: "head head head head head" "nav nav nav nav nav" "aside aside aside aside aside" "con con con con con" "aside2 aside2 aside2 aside2 aside2" "foot foot foot foot foot" ; 
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="items head">Header</div>
-        <div class="items nav">
-            <div class="link l1"><a href="#">About</a></div>
-            <div class="link l2"><a href="#">About</a></div>
-            <div class="link l3"><a href="#">About</a></div>
-            <div class="link l4"><a href="#">About</a></div>
-        </div>
-        <div class="items cont"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur architecto iusto obcaecati commodi ratione non, aliquam a, ea consequuntur sequi eum natus, fuga sint debitis error labore consectetur nostrum reprehenderit.
-        Voluptas molestias optio voluptate architecto eaque similique dicta voluptatibus repudiandae pariatur fuga ipsum voluptates, nesciunt, expedita eveniet dolores libero! Explicabo debitis reiciendis adipisci doloribus asperiores! Veniam doloremque officia saepe aut.
-        Facilis commodi odio eum totam animi ut. Placeat, cum ratione omnis repellendus distinctio totam voluptatem quo optio porro accusantium ipsa praesentium. Doloremque dignissimos architecto magnam perspiciatis fugit illo corrupti odio!
-        Dolore, non maxime nisi nihil id itaque hic atque ea modi laudantium at eaque voluptas, magnam vel blanditiis consectetur ex odio quas nostrum quis saepe laborum nobis? Repudiandae, quia hic.
-        Eum suscipit dolore enim dolorum, voluptas harum quibusdam similique animi. Quisquam asperiores optio iste, incidunt dicta sapiente amet unde. Quaerat, magnam. Et consectetur expedita fugiat numquam rerum esse perferendis itaque.
-        Amet fugit id autem suscipit, vel maiores deserunt tenetur quo, rerum vitae quia cumque optio exercitationem saepe numquam earum quibusdam molestias quis laboriosam dolor, est reprehenderit sapiente modi! Reprehenderit, earum.
-        Atque non adipisci blanditiis culpa obcaecati quae molestias excepturi sapiente suscipit a mollitia sit repellendus delectus soluta cumque, fugit dolor, sequi esse cum provident eaque deleniti accusamus aspernatur. Amet, numquam!
-        Nobis nesciunt reprehenderit quas soluta harum, consequatur modi repellendus at ipsam dicta, vero recusandae pariatur ducimus mollitia dolore numquam praesentium fuga. Optio exercitationem dolores possimus itaque dolor ea, doloribus esse!
-        Animi iusto ullam corporis fugit nisi, in ea ipsa laboriosam aspernatur praesentium excepturi laborum, reprehenderit non odit architecto asperiores magnam sapiente atque vitae? Expedita incidunt maxime consequuntur iure, consectetur nam.
-        Veritatis nesciunt molestias excepturi architecto fugit perspiciatis temporibus rem commodi quisquam provident, aperiam magni, itaque eveniet natus recusandae nulla incidunt ratione facilis odio? Excepturi corporis eos, quas corrupti nesciunt hic.
-        Deleniti possimus, et ab aperiam eligendi adipisci nisi autem quam consectetur laborum nihil quasi molestias maxime debitis asperiores perspiciatis tenetur repellat harum, a blanditiis nobis iusto iure quia doloribus! Molestiae.
-        Explicabo, voluptates necessitatibus dolorem molestias est error doloribus voluptatem, unde deserunt consequatur alias cumque. Dolore libero aut earum error sint cumque neque eos dolorum omnis quisquam, mollitia similique aliquam odio!
-        Velit ducimus at, possimus ut reprehenderit molestias delectus unde nihil explicabo laboriosam pariatur commodi maiores, aliquid dicta deserunt quam vero! Voluptas non eum eligendi fuga, sequi maxime perspiciatis deleniti vitae?
-        Voluptatem ullam, nulla est esse temporibus dolorem sapiente illum minima in sint, nobis veniam asperiores fugiat, harum placeat porro quod velit cum omnis! Mollitia, commodi dicta quos rem aut maiores.
-        Facilis magnam aliquam magni veniam culpa debitis minus ab libero. Culpa laborum voluptatum, magni omnis ad iusto sapiente velit excepturi sed quisquam dolor labore eos error provident eius quia optio.
-        Nulla laudantium aliquam repudiandae assumenda tempora sed veniam, nostrum distinctio vero praesentium maxime impedit natus provident deleniti, earum voluptates eaque sunt in ab! Molestias velit a necessitatibus impedit doloribus cum?
-        Voluptatum qui expedita fuga obcaecati vel voluptates, consequuntur maxime tempora, esse officiis necessitatibus praesentium ipsa, nihil itaque placeat reprehenderit id? Obcaecati reprehenderit suscipit voluptas ipsum quos asperiores alias doloremque voluptatem!
-        Iure, possimus cupiditate. Laborum facere officiis iure. Molestias nobis, sed eligendi, inventore libero sapiente ducimus eius nesciunt, totam natus reiciendis animi quas cupiditate non veritatis. Labore recusandae minima officia consequuntur?
-        Repudiandae vitae exercitationem dolorum iusto maxime officiis quidem nemo, possimus ipsam nam praesentium rem unde perspiciatis vel, laborum illo obcaecati, blanditiis aut alias tempora pariatur expedita! Soluta placeat id sint.
-        Delectus dignissimos quae sunt temporibus esse, perferendis neque a tempore! Animi officia maxime totam quae quas minus officiis nulla neque expedita, consectetur eos, placeat blanditiis dolorem minima cumque eligendi ipsum.
-        Sunt, placeat nemo saepe, iste rem repellat vel voluptas necessitatibus quisquam recusandae mollitia soluta, aspernatur blanditiis facilis laudantium adipisci voluptate? Numquam recusandae iure ullam accusantium voluptates deserunt consectetur provident atque.
-        Natus officia quos obcaecati? Quo eveniet eaque atque consequatur quis ducimus ullam voluptatibus repellat, laudantium vitae voluptatum tenetur itaque nostrum soluta velit assumenda nisi quaerat molestias doloremque! Modi, possimus explicabo.
-        Alias magnam quaerat quidem, laborum laboriosam consectetur voluptas quas? Maxime at eaque suscipit, nobis architecto quia esse quo eveniet labore consequatur eligendi distinctio, ullam voluptatibus, nesciunt reprehenderit doloribus minima iusto.
-        Distinctio, obcaecati, similique quos vel fuga, adipisci amet officia fugit id quasi iusto maxime perferendis vitae magni aliquid alias! Ratione quasi tempore dolore, obcaecati molestias expedita commodi laboriosam autem quos.
-        Soluta quaerat quam commodi sint a ea aliquid eligendi illum at nostrum, nisi, voluptates dolor veritatis blanditiis aliquam itaque laborum molestias vero voluptatum asperiores saepe adipisci quis esse quasi. Odio.
-        Numquam deleniti harum, culpa eveniet blanditiis dolorum laborum incidunt fugiat autem consectetur non inventore molestiae explicabo repudiandae accusamus maxime possimus quos eum necessitatibus a ab perferendis. Corrupti odit culpa quis!
-        Pariatur vitae, perferendis soluta similique eum quis voluptates illo commodi impedit nam ipsum, perspiciatis a nesciunt fuga quas accusamus consequuntur saepe! Eveniet nesciunt deserunt voluptate veritatis unde eius earum sequi.
-        Molestiae, et dolor iure praesentium nam officiis voluptatum, deleniti accusantium minima vitae expedita labore. Blanditiis libero animi sint possimus accusantium debitis, iste laudantium! Voluptas rem ut sequi exercitationem natus assumenda.
-        Dicta, nihil sapiente facere repellat necessitatibus accusantium maiores explicabo sint incidunt illo consequatur aliquam inventore deserunt officia vero quos iste quia laudantium! At distinctio neque ratione repellendus culpa repellat similique!
-        In, commodi assumenda quidem saepe repellendus unde itaque ducimus, quisquam, facere similique tempore? Adipisci repudiandae eligendi, optio animi reiciendis aliquid, tenetur nam alias quo vero doloremque veritatis magnam, temporibus consequuntur.
-        Error deserunt officiis maxime unde ducimus consequatur itaque assumenda possimus, suscipit iure nobis natus minima fugiat alias eos odio dolores soluta non harum rerum ea eveniet, praesentium inventore beatae? Molestiae!
-        Quos iure eius, ipsum molestias error saepe voluptatem quae rem nostrum consectetur quidem provident cumque eos! Asperiores dolores perferendis natus, inventore consectetur incidunt sint ipsam quasi libero est magni ea!
-        Animi, facilis. Molestias delectus dolores quod omnis minus velit hic. Neque mollitia consequuntur tempore corrupti, quam quae obcaecati officia atque rerum exercitationem qui laudantium tenetur explicabo, cum minima! Fuga, vel?
-        Assumenda incidunt animi necessitatibus expedita porro. Sed mollitia eaque obcaecati, velit, unde impedit esse enim in magni, dignissimos corrupti voluptatibus fuga incidunt! Debitis quos non expedita recusandae. Commodi, inventore quasi.
-        Odio dolorem earum optio laboriosam aperiam dicta consequatur molestiae voluptas labore? Voluptates dolore mollitia porro. Suscipit dolores iusto esse nobis distinctio, soluta fuga, repellat culpa dolorem id beatae quisquam voluptatem.</div>
+        <div class="items nav"> nav</div>
+        <div class="items cont">Cont</div>
         <div class="items aside1"> aside</div>
         <div class="items aside2">aside2</div>
         <div class="items foot"> footer</div>
