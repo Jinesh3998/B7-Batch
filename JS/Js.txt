@@ -1,0 +1,24 @@
+JavaScript : 
+
+-It is Scripting and programming languages that provide logic in any webpage (fuctionality)
+-JS is Interpreted languages
+-Interpreted checks the code line by line
+- JS is object oriented as well as object based programming languages.
+JavaScript version :
+ES7(Ecma Script) Advance JavaScript
+ES7
+ES6
+ES8
+ES9
+
+Data types : 
+1) String : 'any thing' "" ``
+"hello" 'hello' `hello`
+2) Number : 10, 1.2,-0.2
+3) Null : 
+4) undefined : a data which declared but not define
+5) Boolean : true & false
+6) Symbol : It is special character
+7) NaN (Not a number)
+8) bigint- Any number followed by n
+
