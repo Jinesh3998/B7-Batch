@@ -22,3 +22,11 @@ Data types :
 7) NaN (Not a number)
 8) bigint- Any number followed by n
 
+Operators in JavaScript :
+1) Arithmatic Operators
+2)Assignment Operators
+3) Comparison Operators
+4) Logical Operators
+5) Ternary Operators
+
+
