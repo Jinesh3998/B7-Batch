@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // hoisting : calling the variable before intialization or decleration 
+
+
+        // console.log(x)//undefined; hoisting is allowed in var
+        var x=10;
+        // var x=20; redecleration is allowed
+        // x=20; reintialization or updatation is allowed
+        // var a; first decleration later intialization is allowed
+        // a=40
+        console.log(x);
+        // console.log(a);
+
+
+        
+        // console.log(y);//error hoisting is not allowed in let
+        let y=20;
+        // let y=30; redecleration is not allowed
+        // y=40;reintialization or updatation is allowed
+        // let b; first decleration later intialization is allowed
+        // b=75;
+        // console.log(b);
+        console.log(y);
+
+
+        // console.log(z);//error hoisting is not allowed in const
+        const z=30;
+        // const z=40; redecleration is not allowed
+        // z=50; reintialization or updatation is not allowed
+        // const c;first decleration later intialization is not allowed
+        // c=35;
+        // console.log(c);
+        console.log(z);
+    </script>
+</body>
+</html>
