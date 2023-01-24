@@ -1,0 +1,11 @@
+Syntax for function :
+
+a) Define function 
+ 
+ function name-of-function(){
+    task///
+ }
+
+b) calling function
+
+name-of-function();
