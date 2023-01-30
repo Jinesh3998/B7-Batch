@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body">
+    <div id="div">
+        <h1 id="head">Heading</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error ipsam, veritatis ab aliquam necessitatibus repudiandae temporibus explicabo, recusandae dolore officia officiis distinctio odio dicta repellat a saepe fugit adipisci doloremque!</p>
+        <button id="btn">add text</button>
+        <button id="btn1">delete</button>
+    </div>
+    <script>
+        //creating html Element
+        let tag=document.createElement("p");//parent
+        console.log(tag)
+        let txt=document.createTextNode("Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error ipsam, veritatis ab aliquam necessitatibus repudiandae temporibus explicabo, recusandae dolore officia officiis distinctio odio dicta repellat a saepe fugit adipisci doloremque!")
+        //child
+        tag.appendChild(txt);
+       
+        let body=document.getElementById("body");//parent
+
+        //add Event Listner
+        let button= document.getElementById("btn");
+        let button1=document.getElementById("btn1");
+        button.addEventListener("click",addText);
+        button1.addEventListener("click",deleteText);
+
+
+        function addText(){
+        body.appendChild(tag)
+        }
+
+        function deleteText(){
+            //remove child
+            //syntax : parent.removeChild(child)
+            body.removeChild(tag);
+        }
+    </script>
+</body>
+</html>

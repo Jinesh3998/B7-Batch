@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="head">Hello</h1>
+    <button id="btn">Change</button>
+    <script>
+        //Event Listner : It used to provide multiple functionality to the same element (call multiple function at same time)
+        //syntax : element.addEventListner(Event,function)
+        let button=document.getElementById("btn");
+       button.addEventListener("mousedown",changeColor);
+       button.addEventListener("mouseup",unchange);
+
+       function unchange(){
+        let head=document.getElementById("head");
+        head.style.color="black"
+       }
+
+        
+        function changeColor(){
+            let head=document.getElementById("head");
+            head.style.color="red";
+        }
+
+        function changebgcolor(){
+            let head=document.getElementById("head");
+            head.style.backgroundColor="yellow"
+        }
+    </script>
+</body>
+</html>

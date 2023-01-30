@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="Heading">Hello</h1>
+    <input type="text" onkeydown="uppercase()" id="txt">
+    <button onmouseout="change()" onmouseover="change3()">change</button>
+    <script>
+        function change(){
+            let head=document.getElementById("Heading");
+            head.innerHTML="Hey";
+        }
+        function change3(){
+            let head=document.getElementById("Heading");
+            head.innerHTML="Hello";
+        }
+        function change1(){
+            let head=document.getElementById("Heading");
+            head.style.visibility="hidden"
+        }
+        function change2(){
+            let head=document.getElementById("Heading");
+            head.style.visibility="visible";
+        }
+
+        function keyboard(){
+            let input=document.getElementById("txt");
+            input.style.backgroundColor="yellow"
+        }
+
+        function keyboard1(){
+            let input=document.getElementById("txt");
+            input.style.backgroundColor="white"
+        }
+
+        function uppercase(){
+           let input=document.getElementById("txt");
+          input.value=input.value.toUpperCase();
+        }
+    </script>
+</body>
+</html>

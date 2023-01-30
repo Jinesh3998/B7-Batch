@@ -1,0 +1,7 @@
+Dom Nodes :
+create html node : 
+document.createElements("tagname")
+create text:
+document.createTextNode("text")
+appent child into parent :
+parentnode.appendChild(childName)
