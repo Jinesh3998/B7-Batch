@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr1=[1,2,3,4];
+        var arr2=[5,4,7,8];
+        var arr3=[...arr1,...arr2,50];
+        console.log(arr3);
+
+        var obj1={
+            name: "sachin",
+            age : 40,
+            designation : "cricketer"
+        }
+        var obj2={
+            runs : 21000,
+            strikeRate :97,
+            designation : "cricketer and Bussinessman",
+            age:50
+        }
+         var obj3={...obj2,...obj1};
+         console.log(obj3)
+    </script>
+</body>
+</html>

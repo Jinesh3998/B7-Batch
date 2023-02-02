@@ -12,6 +12,7 @@
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error ipsam, veritatis ab aliquam necessitatibus repudiandae temporibus explicabo, recusandae dolore officia officiis distinctio odio dicta repellat a saepe fugit adipisci doloremque!</p>
         <button id="btn">add text</button>
         <button id="btn1">delete</button>
+        <button id="btn2">replace</button>
     </div>
     <script>
         //creating html Element
@@ -26,8 +27,17 @@
         //add Event Listner
         let button= document.getElementById("btn");
         let button1=document.getElementById("btn1");
+        let button2=document.getElementById("btn2")
         button.addEventListener("click",addText);
         button1.addEventListener("click",deleteText);
+        button2.addEventListener("click",replaceElement);
+
+
+
+        let tag1=document.createElement("h1");
+        let txt1=document.createTextNode("I am replace");
+        tag1.appendChild(txt1);
+        console.log(tag1)
 
 
         function addText(){
@@ -37,7 +47,18 @@
         function deleteText(){
             //remove child
             //syntax : parent.removeChild(child)
-            body.removeChild(tag);
+            console.log(tag)
+            // body.removeChild(tag);
+            body.removeChild(tag1)
+            
+        }
+
+        function replaceElement(){
+            //replace child
+            //syntax : parent.replaceChild(to child,from child)
+
+            body.replaceChild(tag1,tag);
+
         }
     </script>
 </body>
