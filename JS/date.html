@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1"></h1>
+    <script>
+        function timer(){
+            let date = new Date();
+            // console.log("hello");
+            let hr=date.getHours();
+            let min=date.getMinutes();
+            let sec=date.getSeconds();
+            let formate=`${hr} : ${min} : ${sec}`
+            document.getElementById("h1").innerHTML=formate;
+        }
+        setInterval(timer,1000)
+
+    // let date1= new Date(year, month, day, hour,min, sec, milisec)
+
+    // let date1= new Date(2020, 00, 15, 05, 56, 23);
+    // console.log(date1)
+
+    //get method
+        // console.log(date.getFullYear())
+        // console.log(date.getMonth());
+        // // [ sun, mon, tue, wed, thr, fri, sat]
+        // console.log(date.getDay());
+        // console.log(date.getDate());
+
+    //set method
+// date.setDate(12)
+// date.setMonth(07)
+// date.setFullYear(2024)
+// console.log(date)
+
+    </script>
+</body>
+</html>

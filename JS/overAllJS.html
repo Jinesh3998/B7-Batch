@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1">Basics of javaScript</h1>
+    <button id="btn">click</button>
+    <script>
+
+        
+        let btn= document.getElementById("btn");
+        btn.addEventListener('click', changeText);
+        btn.addEventListener('click', changecolor);
+
+        function changeText(){
+            document.getElementById("h1").innerHTML='Basics of Html'
+        }
+        function changecolor(){
+            document.getElementById("h1").style.color="red"
+        }
+
+
+        // let a="hello" 112, undefined, null, true false 
+        // 9n
+        /*
+        1) Arithmatic : +-%**
+        pre increament ++i i++
+        2) Assignment oper : = += -= *= **= 
+        3) relational oper: == === != !== < > <= >=
+        4)Logical oper : && ||
+
+         keyword : 
+         var let const while for  do while  if else
+
+         variable :
+         let 
+         var 
+         const
+
+         slice(start, end+1)
+         substring(start, end+1)
+         substr(start, length)
+
+         searching method
+         1) indexOf("char", search start)
+         2) lastindexOf(char ,search start)
+         3) startsWith("")//true false
+         4)endwith()
+         5)typeOf()
+
+         number
+
+         parseInt()
+         toString()
+         parsefloat()10.2362
+
+         function funName(name ,age ){
+            task;
+         }
+          
+         funName(sachin, 52);
+         let arr_name=[12,name]
+         let arr-Name=[],
+         arr_Name[0]=25
+
+         let arr_name= new Array("2533")
+
+         1) arr-Name.push(25)
+         */
+        let b=36;
+        console.log(`hey ${b}`)
+        const a=25;
+
+        let person= new Array("Suresh",23, "Hyd");
+        console.log(person.length)
+
+        let obj={
+            name : "abc"
+        }
+        obj.name="pqr"
+        obj.age=25;
+        console.log(obj)
+
+        for(i in person){
+            console.log(person[i])
+        }
+        for(i of person){
+            console.log(i);
+        }
+        function dt(element, itmes){
+            console.log(element, itmes)
+        }
+        person.forEach(dt); //call back function
+
+        // slice(start, end+1)
+        //splice(start pos, no.deleting , new items)
+        //  for(let i=25;i>0;i--){
+        //     console.log(i)
+        //  }
+        //  var c=36;
+        //  while(c>0){
+        //     console.log(c);
+        //     c--;
+        //  }
+        // x=5;
+        // if(x>5){
+        //     console.log(true)
+        // }
+        // else if(x<5){
+        //     console.log(false)
+        // }
+        // else{
+        //     console.log("both condition are false")
+        // }
+
+            // let user=prompt("number")//string
+
+            switch(Number(user)){
+                case 1:{
+                    console.log("case 1 is called")
+                }
+                break;
+                case 2:{
+                    console.log("case 2 is called")
+                }
+                break;
+                case 3:{
+                    console.log("case 3 is called")
+                }
+                break;
+                 case 4:{
+                    console.log("case 4 is called")
+                } 
+                break;
+                default:{
+                    console.log("default is called")
+                }
+            }
+      
+            'use strict' 
+            otp=3562;
+
+            console.log(otp)
+
+            /*
+            selector :
+            Id selector
+            class 
+            tag
+            query selector
+            query selectorall
+            */
+
+    </script>
+</body>
+</html>
